@@ -20,8 +20,6 @@ export default function SignUpPage() {
                 const user = userCredential.user;
                 console.log(user);
                 createUser(user.uid, mail);
-                // const docRef = doc(usersRef, user.uid); // create reference to the user in firestore
-                // setDoc(docRef, { name }); // set/update the user in firestore with the values from userToUpdate/values from input fields
             })
             .catch(error => {
                 let code = error.code; // saving error code in variable
